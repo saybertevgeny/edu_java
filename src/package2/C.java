@@ -7,6 +7,6 @@ public class C {
     public void simpleMethod(){
         System.out.println("simpleMethod of C of package1");
         A a = new A();
-        a.simpleMethod();
+        a.simpleMethod();//тут ошибка т.к A не в этом пакете
     }
 }
