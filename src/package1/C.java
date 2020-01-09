@@ -6,5 +6,6 @@ public class C {
         System.out.println("simpleMethod of C of package1");
         A a = new A();
         a.simpleMethod();
+        a.simpleMethod2();//Можно!!! ))
     }
 }
