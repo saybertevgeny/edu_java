@@ -12,6 +12,10 @@ public class VarArgs {
         System.out.println("Передано два аргумента: " + arg1 + ", " + arg2);
     }
 
+    public void test(String arg1,String arg2,String arg3){
+        System.out.println("Передано два аргумента: " + arg1 + ", " + arg2 + ", " + arg3);
+    }
+
     public void test(String ...args){
         System.out.println("Переданно разное количество аргументов:" + args.length);
     }
