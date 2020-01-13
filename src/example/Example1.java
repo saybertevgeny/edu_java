@@ -3,6 +3,7 @@ package example;
 import code.MyNumber;
 import code.MyNumberWithParams;
 import code.SomeFunc;
+import code.StringFunc;
 
 public class Example1 {
 
@@ -23,10 +24,12 @@ public class Example1 {
 
         SomeFunc<Integer> factorial = n -> {
             int result = 1;
-            for (int i = 1; i <= n; i++){
-                result *= i;
+            for (int i = 1; i <= n; i++) {
+                result = i * result;
             }
             return result;
         };
+
+        System.out.println("Вызов факториала 4" + factorial.func(4));
     }
 }
